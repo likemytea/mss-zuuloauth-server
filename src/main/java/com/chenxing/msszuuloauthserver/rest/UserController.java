@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class UserController {
 	@RequestMapping("/client")
-	public String home(Principal user) {
-		return user.getName();
+	public Principal home(Principal user) {
+		return user;
 	}
 }
